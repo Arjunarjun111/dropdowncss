@@ -1,0 +1,130 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #a9e264;
+    width: 250px;
+    color: rgb(29, 76, 143);
+    padding-top: 20px;
+    position: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.sidebar .nav-list {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.imgee{
+position: absolute;
+    height: 50px;
+    width: 30px;
+    float: left;
+    margin-top: -33px;
+    margin-left: -45px;
+    position: relative;
+    
+}
+
+.image2{
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    margin-top: -33px;
+    margin-left: -45px;
+}
+
+.sidebar .nav-list li {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.sidebar .nav-list a {
+    color: rgb(28, 112, 190);
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .nav-list a:hover {
+    background-color: #4CAF50;
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: rgb(145, 24, 54);
+    text-decoration: none;
+    width: 100%;
+}
+
+.dropdown > a:hover {
+    background-color: #4CAF50;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2e2929;
+    width: 100%;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: rgb(176, 76, 76);
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Pseudo-Class to Show Dropdown */
+.dropdown:is(:hover) .dropdown-menu {
+    display: block;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    flex-grow: 2;
+    color: #a52088;
+}
+
+.logout{
+    margin-top: 160px;
+    
+}
